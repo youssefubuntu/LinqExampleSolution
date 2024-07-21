@@ -1,4 +1,4 @@
-﻿// Join(); [similar to INNER JOIN in SQL]
+﻿// Join();
 using LinkExample;
 
 var books = DataSource.GetBooks();
@@ -37,6 +37,7 @@ foreach(var bookWithAuthor in booksWithAuthorQuery)
 
 
 Console.WriteLine("----------Group Join----------");
+// GroupJoin();
 
 // Method Syntax
 var booksWithAuthorGroupJoin = books.GroupJoin( // outer collection
