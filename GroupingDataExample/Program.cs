@@ -29,4 +29,11 @@ foreach(var element in groupedStudent)
     Console.WriteLine();
 }
 
+var l1 = new List<Student>() { new Student { Age = 1, Name = "A", Country = "A", Id = 1} };
+var l2 = new List<Student>() { new Student { Age = 2, Name = "B", Country = "B", Id = 2} };
+
+var c = l1.Concat(l2);
+foreach(var s in c)
+    Console.WriteLine(s.Name + s.Country + s.Id);
+
 Console.ReadKey();
