@@ -13,19 +13,19 @@ Console.WriteLine("----------------------------------------------------");
 
 
 // OfType => filters the collection based on a given type
-var items = new ArrayList()
+var elements = new ArrayList()
 {
     11, true, "Hi", 20, "Hello", false, 'A', 'B', 'C',
 };
 
 // Method Syntax (OfType)
-var result = items.OfType<string>();
+var result = elements.OfType<string>();
 
 // Query Syntax (OfType)
-var resultQuery = from value in items.OfType<string>() 
-                  select value;
+var resultQuery = from element in elements.OfType<string>() 
+                  select element;
 
-foreach (var item in resultQuery)
+foreach (var item in result)
     Console.WriteLine(item);
 
 Console.ReadKey();
