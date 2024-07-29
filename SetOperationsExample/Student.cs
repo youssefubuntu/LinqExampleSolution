@@ -20,6 +20,15 @@
             };
         }
 
+        public static IEnumerable<Student> GetStudentsTwo()
+        {
+            return new List<Student>()
+            {
+                new Student { Id = 1, Name = "Mazen", Age = 21 },
+                new Student { Id = 2, Name = "Basem", Age = 27 },
+            };
+        }
+
         public override string ToString()
         {
             return $"Name: {Name}, Age: {Age}";
